@@ -21,13 +21,43 @@ body {
 	font-family: $font;
 }
 
-.navigation {
-	li{
-		display: inline-block;
-	}
-	a {
-		@include menubutton ($black);
-
-	}
+.title-heading{
+	margin-bottom: 10em;
 }
 
+ul {
+	margin: 1em;
+	height: 8em;
+	position: absolute;
+	top: 5em;
+
+
+	
+	li{
+		padding: 0em .5em 5em .5em;
+		display: block;
+		float: left;
+		margin-right: 0;
+		background: ($grey)
+	}
+	a {
+		background: black;
+		height: 0px;
+		display: block;
+		width: 5em;;
+		position: relative;
+	&:hover {
+		height: 80px;
+		transition: all 500ms ease;
+	}
+
+	}
+
+
+}
+li:first-child a {
+	&:hover {
+	background-color: green;
+}
+}
+ 

@@ -33,15 +33,40 @@ body {
   font-family: sans-serif;
 }
 
-.navigation li {
-  display: inline-block;
+.title-heading {
+  margin-bottom: 10em;
 }
 
-.navigation a {
-  padding: 2em;
-  background-color: #000000;
-  border: 2px solid;
-  display: inline-block;
+ul {
+  margin: 1em;
+  height: 8em;
+  position: absolute;
+  top: 5em;
+}
+
+ul li {
+  padding: 0em .5em 5em .5em;
+  display: block;
+  float: left;
+  margin-right: 0;
+  background: #E6E6E6;
+}
+
+ul a {
+  background: black;
+  height: 0px;
+  display: block;
+  width: 5em;
+  position: relative;
+}
+
+ul a:hover {
+  height: 80px;
+  transition: all 500ms ease;
+}
+
+li:first-child a:hover {
+  background-color: green;
 }
 
 /*# sourceMappingURL=style.css.map */
