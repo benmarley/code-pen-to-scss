@@ -8,11 +8,6 @@
   scale: 1;
 }
 
-@-o-viewport {
-  width: device-width;
-  scale: 1;
-}
-
 @-webkit-viewport {
   width: device-width;
   scale: 1;
@@ -25,7 +20,6 @@
 
 html {
   box-sizing: border-box;
-  -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
@@ -34,3 +28,20 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+body {
+  font-family: sans-serif;
+}
+
+.navigation li {
+  display: inline-block;
+}
+
+.navigation a {
+  padding: 2em;
+  background-color: #000000;
+  border: 2px solid;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=style.css.map */

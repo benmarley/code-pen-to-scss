@@ -16,3 +16,18 @@ html {
 *, *:before, *:after {
 	box-sizing: inherit;
 }
+
+body {
+	font-family: $font;
+}
+
+.navigation {
+	li{
+		display: inline-block;
+	}
+	a {
+		@include menubutton ($black);
+
+	}
+}
+
