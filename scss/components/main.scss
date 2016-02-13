@@ -26,38 +26,78 @@ body {
 }
 
 ul {
-	margin: 1em;
+	padding:0;
 	height: 8em;
 	position: absolute;
 	top: 5em;
-
-
-	
+	overflow: hidden;
+	width: 100%;
 	li{
-		padding: 0em .5em 5em .5em;
+		padding: 0em 0em 10em 0em;
 		display: block;
 		float: left;
 		margin-right: 0;
-		background: ($grey)
+		background: ($grey);
+		// border-top: 10px solid (black);
 	}
 	a {
 		background: black;
 		height: 0px;
 		display: block;
-		width: 5em;;
+		width: 5em;
 		position: relative;
+		text-align: center;
+		list-style-type: none;
+		text-decoration: none;
+		color: white;
+		// padding-top: .5em;
+
+
 	&:hover {
-		height: 80px;
+		height: 140px;
 		transition: all 500ms ease;
 	}
-
+	a:after {
+		background: black;
+		height: 100%;;
+		display: block;
+		
+		position: absolute;
 	}
-
-
 }
+
+li:hover > a {
+	height: 140px;
+	transition: all 400ms ease-in-out;
+}
+
+
 li:first-child a {
+	background-color: blue;
+	&:hover {
+	background-color: blue;
+}
+}
+
+li:nth-child(2) a {
+	background-color: yellow;
+	&:hover {
+	background-color: yellow;
+}
+}
+
+li:nth-child(3) a {
+	background-color: orange;
+	&:hover {
+	background-color: orange;
+}
+}
+
+li:nth-child(4) a {
+	background-color: green;
 	&:hover {
 	background-color: green;
+}
 }
 }
  

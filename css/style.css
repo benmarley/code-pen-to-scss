@@ -38,14 +38,16 @@ body {
 }
 
 ul {
-  margin: 1em;
+  padding: 0;
   height: 8em;
   position: absolute;
   top: 5em;
+  overflow: hidden;
+  width: 100%;
 }
 
 ul li {
-  padding: 0em .5em 5em .5em;
+  padding: 0em 0em 10em 0em;
   display: block;
   float: left;
   margin-right: 0;
@@ -58,14 +60,58 @@ ul a {
   display: block;
   width: 5em;
   position: relative;
+  text-align: center;
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
 }
 
 ul a:hover {
-  height: 80px;
+  height: 140px;
   transition: all 500ms ease;
 }
 
-li:first-child a:hover {
+ul a a:after {
+  background: black;
+  height: 100%;
+  display: block;
+  position: absolute;
+}
+
+ul li:hover > a {
+  height: 140px;
+  transition: all 400ms ease-in-out;
+}
+
+ul li:first-child a {
+  background-color: blue;
+}
+
+ul li:first-child a:hover {
+  background-color: blue;
+}
+
+ul li:nth-child(2) a {
+  background-color: yellow;
+}
+
+ul li:nth-child(2) a:hover {
+  background-color: yellow;
+}
+
+ul li:nth-child(3) a {
+  background-color: orange;
+}
+
+ul li:nth-child(3) a:hover {
+  background-color: orange;
+}
+
+ul li:nth-child(4) a {
+  background-color: green;
+}
+
+ul li:nth-child(4) a:hover {
   background-color: green;
 }
 
