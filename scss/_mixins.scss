@@ -1,0 +1,32 @@
+@mixin list {
+	padding:0;
+	height: 8em;
+	position: absolute;
+	top: 5em;
+	overflow: hidden;
+	width: 100%;
+	margin-left: 8%;
+	margin-right: 0;
+
+}
+
+@mixin list-items ($color) {
+	padding: 0em 0em 10em 0em;
+	display: block;
+	float: left;
+	margin-right: 0;
+	background: $color;
+	width: 21%;
+
+}
+
+@mixin link-buttons ($color) {
+	height: 0px;
+	display: block;
+	width: 100%;
+	position: relative;
+	text-align: center;
+	list-style-type: none;
+	text-decoration: none;
+	color: $color;
+}

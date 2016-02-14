@@ -19,40 +19,28 @@ html {
 
 body {
 	font-family: $font;
+	margin: 0;
+	background-color: $grey;
 }
 
 .title-heading{
 	margin-bottom: 10em;
+	color: $medium-green;
+	text-align: center;
 }
 
 ul {
-	padding:0;
-	height: 8em;
-	position: absolute;
-	top: 5em;
-	overflow: hidden;
-	width: 100%;
+	@include list;
+
+	// transform: translateX(-50%)
+	
 	li{
-		padding: 0em 0em 10em 0em;
-		display: block;
-		float: left;
-		margin-right: 0;
-		background: ($grey);
+		@include list-items ($white);
 		// border-top: 10px solid (black);
 	}
 	a {
-		background: black;
-		height: 0px;
-		display: block;
-		width: 5em;
-		position: relative;
-		text-align: center;
-		list-style-type: none;
-		text-decoration: none;
-		color: white;
+		@include link-buttons ($med-grey);
 		// padding-top: .5em;
-
-
 	&:hover {
 		height: 140px;
 		transition: all 500ms ease;
@@ -61,43 +49,68 @@ ul {
 		background: black;
 		height: 100%;;
 		display: block;
-		
 		position: absolute;
 	}
 }
 
 li:hover > a {
 	height: 140px;
-	transition: all 400ms ease-in-out;
+	transition: all 300ms ease-out;
 }
 
 
 li:first-child a {
-	background-color: blue;
+	background-color: $dark-blue;
 	&:hover {
-	background-color: blue;
+	background-color: $dark-blue;
+	color: $medium-green;
 }
 }
 
 li:nth-child(2) a {
-	background-color: yellow;
+	background-color: $medium-green;
 	&:hover {
-	background-color: yellow;
+	background-color: $medium-green;
+	color: $soft-yellow;
 }
 }
 
 li:nth-child(3) a {
-	background-color: orange;
+	background-color: $soft-yellow;
 	&:hover {
-	background-color: orange;
+	background-color: $soft-yellow;
+	color: $medium-green;
 }
 }
 
 li:nth-child(4) a {
-	background-color: green;
+	background-color: $teal;
 	&:hover {
-	background-color: green;
+	background-color: $teal;
+	color: $soft-yellow;
 }
 }
+}
+
+@media only screen and (min-width: 40em) {
+	ul{
+		width: 75%;
+		margin-left: 25%;
+		li {
+		width: 15%;
+	}
+	}
+	
 }
  
+
+@media only screen and (min-width: 60em) {
+	ul{
+		width: 75%;
+		margin-left: 35%;
+		li {
+		width: 10%;
+	}
+}
+}
+	
